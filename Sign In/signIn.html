@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sign In to SHARDS</title>
+    <link rel="icon" href="/Images/logo.svg" type="image/svg">
+
+    <!-- Style CSS -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../Images/map.svg) center center no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 6vh;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+h1 img {
+    height: 4vh;
+    margin-right: 1.25vh;
+}
+
+main {
+    height: 60vh;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(.8vh);
+    border-radius: 2vh;
+}
+
+main form h2 {
+    font-size: 5vh;
+    font-weight: 700;
+    color: #f1f1f1;
+    margin-bottom: 4vh;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input.userName,
+input.password {
+    height: 5.5vh;
+    width: 27.5vh;
+    border: none;
+    border-radius: 0.9vh;
+    padding-left: 2.5vh;
+    font-size: 1.75vh;
+    font-weight: 500;
+    color: #f1f1ff;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(.8vh);
+    margin: 1vh 0;
+    outline: none;
+}
+
+input.password {color: #b3d4f7;}
+
+a.forgotPassword,
+a.createAccount {
+    text-decoration: none;
+    color: #b3d4f7;
+    margin: 1vh 0;
+    font-size: 1.7vh;
+    font-weight: 500;
+    margin: 2vh 0;
+    transition: 0.7s;
+}   a.forgotPassword:hover,
+    a.createAccount:hover {
+        opacity: 0.9;
+    }
+
+a.createAccount {color: #f1f1f1; font-size: 1.8vh;}
+
+button.signInBtn {
+    height: 5.5vh;
+    width: 30vh;
+    border: none;
+    border-radius: 0.9vh;
+    padding: 0 2.5vh;
+    font-size: 1.8vh;
+    font-weight: 600;
+    color: #1f1f1f;
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(.8vh);
+    margin: 1vh 0;
+    outline: none;
+    cursor: pointer;
+    transition: 1s;
+}   button.signInBtn:hover {
+        background-color: #b3d4f7;
+}
+    </style>
+
+    <!-- Script JS -->
+    <script></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+    <section>
+
+        <div><h1><img src="/Images/logo.svg" alt="">SHARDS</h1></div>
+
+        <main>
+            <form action="" id="signInForm">
+                <h2>SIGN IN</h2>
+                <input type="text" id="userName" class="userName" placeholder="Username...." required>
+                <input type="password" id="password" class="password" placeholder="Password...." required>
+                <a href="#" id="forgotPassword" class="forgotPassword">Forgot your password?</a>
+                <button type="submit" id="signInBtn" class="signInBtn">SIGN IN</button>
+                <a href="/Sign Up/signUp.html" id="createAccount" class="createAccount">Don't have an account?</a>
+            </form>
+        </main>
+
+    </section>
+
+</body>
+</html>
